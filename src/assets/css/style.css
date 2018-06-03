@@ -1,0 +1,205 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #919191 !important
+  }
+  
+.navbar{
+    background-color:#1d1d1d !important;
+    color:white !important
+}
+
+#search-input{
+    background-color:#1d1d1d !important;
+    color:#919191 !important;
+    border:2px solid;
+    border-radius:25px
+}
+a{
+    text-decoration: none !important;
+}
+.navbar-light .navbar-brand{
+    color:white !important;
+    font-family: 'Monoton', cursive;
+    font-size: 180% !important
+}
+.movielist{
+    /* margin-top: -41% !important; */
+   margin-left: 75% !important;
+   z-index:100 !important;
+   position: relative !important;
+   position: absolute !important;
+    top:60px;
+    left:10px;
+    bottom:10px;
+    right: 10px;
+}
+.listhide{
+    display: none
+ }
+.list-group{
+    width: 90% !important;
+    max-height: 500px  !important;
+    overflow-y: scroll !important;
+  
+}
+
+.list-group-item{
+   
+    color: white !important;    
+    background-color:#1d1d1d !important;
+    border:1px solid #747373  !important;
+}
+.list-group-item:hover{
+    background-color:#524e4e !important;
+}
+
+.list-group li img{
+    width: 43px;
+    height: auto;
+    height: 63px;
+    float: left;
+    margin: 7px;
+}
+.list-group li span{
+    font-weight: bold;
+    font-size: 0.8em
+}
+p{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.selectedMovie{
+    width: 100%;
+    margin-top: 1;
+     z-index: -2;
+}
+.watched{
+     z-index: -2;
+}
+.selectedMovie .mtitle{
+    color:rgb(248, 248, 248);
+    font-size: 200%;
+    font-weight: bold;
+}
+.selectedMovie p{
+    color:rgb(248, 248, 248);
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 20px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(37, 37, 37); 
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c4c3c3; 
+}
+
+.watched img:hover{
+    opacity: 0.1;
+}
+.watched img{
+    border:4px solid white
+}
+.onmouseover{
+    margin-top:-300px;
+    z-index:200;
+    position:absolute;
+    font-size: 150%;
+    font-weight: bold;
+    color: #ffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  z-index: -2;
+  -webkit-animation: mymove 1s; /* Safari 4.0 - 8.0 */
+    animation: mymove 1s;
+
+}
+
+.vote{
+    color:'black';
+    font-size:200%
+}
+.onvote{
+color: rgb(55, 30, 199) !important;
+font-size:300%
+}
+
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {margin-top: -250px;}
+    to {margin-top: -300px;}
+}
+
+@keyframes mymove {
+    from {margin-top: -250px;}
+    to {margin-top: -300px;}
+}
+
+.selectedPost{
+    margin: 5%
+}
+.selectedPost:hover{
+    opacity: 0.5;
+}
+.watchedonvote{
+    color: rgb(55, 30, 199) !important;
+font-size:200%
+}
+
+.lds-dual-ring {
+    display: inline-block;
+  
+  }
+  .lds-dual-ring:after {
+      position: absolute;
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -1%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+.inputsearch{
+    border:2px solid white !important;
+    width:150% !important;
+    height:100% !important;
+    margin-left: 450%  !important;
+    border-radius: 36px;
+    margin: 2%
+  }
+
